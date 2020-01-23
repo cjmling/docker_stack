@@ -13,4 +13,10 @@ services:
             MYSQL_USER: myusername
             MYSQL_PASSWORD: mypassword
             MYSQL_DATABASE: mydatabase
+    pma:
+        image: phpmyadmin/phpmyadmin
+        ports: 
+            - 8080:80
+        links:
+            - mysql:db
      
