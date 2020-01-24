@@ -1,1 +1,4 @@
-database/mysql/
+database/mysql/*
+
+#just so that we can commit/track the folder structure in git
+!database/mysql/.README.md
