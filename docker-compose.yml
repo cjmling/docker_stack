@@ -8,6 +8,8 @@ services:
             - ./www:/var/www/html
     mysql:
         image: mysql
+        volumes:
+            - ./database/mysql:/var/lib/mysql
         environment: 
             MYSQL_ROOT_PASSWORD: root
             MYSQL_USER: myusername
